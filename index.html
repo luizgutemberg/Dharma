@@ -2,12 +2,101 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharma</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharma</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
   
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  
-  </head>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulário de Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <form action="">
+
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <input type="text" placeholder="Nome" class="form-control">
+              </div>
+
+              <div class="col-md-6 mb-2">
+                <input type="email" placeholder="E-mail" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <input type="text" placeholder="Data de Nascimento" class="form-control">
+              </div>
+
+              <div class="col-md-6 mb-2">
+                <input type="text" placeholder="Cpf" class="form-control">
+              </div>
+            </div>
+
+
+            <div class="row">
+
+              <div class="col mb-2">
+                <input type="text" id="cep" placeholder="Cep" maxlength="8" class="form-control">
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <input type="text" placeholder="Logradouro" id="logradouro" class="form-control">
+              </div>
+
+              <div class="col-md-2 mb-2">
+                <input type="text" placeholder="Num" id="numero" class="form-control">
+              </div>
+
+              <div class="col-md-4 mb-2">
+                <input type="text" placeholder="Complemento" class="form-control">
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-5 mb-2">
+                <input type="text" placeholder="Bairro" id="bairro" class="form-control">
+              </div>
+
+              <div class="col-md-5 mb-2">
+                <input type="text" placeholder="Cidade" id="cidade" class="form-control">
+              </div>
+
+              <div class="col-md-2 mb-2">
+                <input type="text" placeholder="Uf" id="uf" class="form-control">
+              </div>
+            </div>
+            
+            <button class="btn btn-primary">Cadastrar</button>
+
+          </form>
+
+        </div>
+
+        <div class="modal-footer">
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+</body>  
