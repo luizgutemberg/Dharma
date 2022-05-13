@@ -290,4 +290,33 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/carousel.js"></script>
 
+  <script>    
+    //Inicializando o Jquery
+    $(document).ready(function(){
+
+      //alert('ok');
+
+      //Ao sair do input
+      $('#cep').blur(function(){
+                  //Guardando o valor do cep
+                  var cepDigitado = $('#cep').val();
+
+$.getJSON('https://viacep.com.br/ws/'+cepDigitado+'/json/', 
+        function(dados){
+          
+          $('#logradouro').val(dados.logradouro);
+          $('#bairro').val(dados.bairro);
+          $('#cidade').val(dados.localidade);
+          $('#uf').val(dados.uf);
+          $('#numero').focus();
+
+        })
+
+})
+
+
+})
+
+</script>
+
 </body>  
